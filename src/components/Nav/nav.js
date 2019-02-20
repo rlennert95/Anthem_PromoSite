@@ -1,9 +1,22 @@
-import React from "react";
+import React, { Component } from 'react';
 
-function Nav() {
-  return (
-   <div>  </div>
-  );
+class Nav extends Component {
+
+  Test() {
+    alert("hello")
+  }
+
+  render() {
+    return (
+
+      <div> <p onClick={this.Test}> About </p> Characters Media </div>
+
+    );
+
+
+  }
+
 }
 
-export default Nav;
+
+export default Nav
