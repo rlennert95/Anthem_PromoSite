@@ -1,2 +1,17 @@
+@font-face {
+    font-family: EarthOrbiter;
+    src: url('../../assets/earthorbiter.ttf');
+  }
+  
+  #navbar {
+    font-family: EarthOrbiter;
+    font-size: 150%;
+    text-shadow: 2px 2px grey;
 
+    
+  }
 
+  #navbar :hover{
+    color: orange;
+    text-decoration: underline;
+  }

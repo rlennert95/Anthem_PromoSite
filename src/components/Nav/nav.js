@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './nav.css'
 
 class Nav extends Component {
 
@@ -9,7 +10,7 @@ class Nav extends Component {
   render() {
     return (
 
-      <div> <p onClick={this.Test}> About </p> Characters Media </div>
+      <div id="navbar" onClick={this.Test}> <p>  About </p>  <p> Characters </p> <p> Media </p> </div>
 
     );
 
