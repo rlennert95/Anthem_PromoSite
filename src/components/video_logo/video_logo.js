@@ -11,6 +11,8 @@ componentDidMount() {
 
 playLogo() {
   this.refs.vidRef.play();
+  this.refs.vidRef.loop = true;
+  this.refs.vidRef.muted = true;
 }
 
   render() {
