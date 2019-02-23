@@ -13,9 +13,14 @@ class App extends Component {
     return (
       <div className="App">
 
-      <Logo/>
+   
+ 
+      <Logo/>  
       <Nav/>
       <Video_Logo/>
+    
+      
+      
       <Music/>
 
 

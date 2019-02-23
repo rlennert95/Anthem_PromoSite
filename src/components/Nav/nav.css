@@ -6,12 +6,20 @@
   #navbar {
     font-family: EarthOrbiter;
     font-size: 150%;
-    text-shadow: 2px 2px grey;
+    text-shadow: 1px 1px grey;
+    width: 15%;
+    padding-left: 2%;
 
     
   }
 
   #navbar :hover{
-    color: orange;
-    text-decoration: underline;
+    color: #f25a2e;
+   
+  }
+
+
+  #purchase {
+    color: white;
+    background-color: #f25a2e;
   }

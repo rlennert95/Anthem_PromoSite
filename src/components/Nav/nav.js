@@ -10,7 +10,17 @@ class Nav extends Component {
   render() {
     return (
 
-      <div id="navbar" onClick={this.Test}> <p>  About </p>  <p> Characters </p> <p> Media </p> </div>
+      <div id="navbar" onClick={this.Test}> 
+
+      <p> About </p>
+
+      <p> Characters </p>
+
+      <p> Media </p> 
+
+      <p id="purchase"> Purchase Anthem </p>
+      
+      </div>
 
     );
 
