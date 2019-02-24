@@ -8,20 +8,20 @@ import Music from './components/music/music.js'
 class App extends Component {
 
 
-  
+
   render() {
     return (
       <div className="App">
 
-   
- 
-      <Logo/>  
-      <Nav/>
-      <Video_Logo/>
-    
-      
-      
-      <Music/>
+
+
+        <Logo/>
+        <Nav/>
+        <Video_Logo/>
+        
+
+
+        <Music />
 
 
 
