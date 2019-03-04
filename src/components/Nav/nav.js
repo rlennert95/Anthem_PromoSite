@@ -1,27 +1,32 @@
 import React, { Component } from 'react';
 import './nav.css'
-
+import Home from "../Home/home.js";
 
 
 class Nav extends Component {
   constructor() {
     super()
     this.state = {
-      home: true,
+      home: false,
       about: false
     }
-    this.handleClick = this.handleClick.bind(this)
+    
   }
 
-  handleClick() {
-    this.setState({ about: true, home: false })
-  }
+
 
   render() {
-    if (this.state.home === true & this.state.about === false) {
+
+    
+
+
       return (
 
+        
+
         <div id="navbar">
+
+       
 
           <p> About </p>
 
@@ -29,21 +34,20 @@ class Nav extends Component {
 
           <p> Media </p>
 
+          <p>  </p>
+
 
 
           <p id="purchase"> Purchase </p>
 
 
-          <h1>{this.state.about}</h1>
-          <button onClick={this.handleClick}>Change!</button>
+         
+          <button onClick={this.props.test2}>Change!</button>
         </div>
-      )
-    } else if (this.state.home === false & this.state.about === true) {
-      return (
-        <div> About </div>
-      )
-    }
 
+  
+      )
+    
   }
 }
 

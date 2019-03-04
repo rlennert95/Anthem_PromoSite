@@ -13,33 +13,39 @@ class Home extends Component {
      about: false
     }
 
-    
+   
 
   }
   
+  
+StateUpdate() {
+  this.setState({home:false})
+}
 
   render() {
-
+console.log("hello "+ this.props.name)
 
     if (this.state.home === true) {
     return (
 
      <div> 
         <Logo/>
-        <Nav/>
+        <Nav test={this.props.name} test2={this.StateUpdate.bind(this)}/>
         <Video_Logo/>
+        {/* <button onClick={this.StateUpdate.bind(this)}> test </button> */}
      </div>    
 
     );
-} else if (this.state.home === false & this.state.about === true) {
+} else if (this.state.home === false ) {
     return (
 
         <div> 
-          <p> The state is set to about = {this.state.about} </p>
+          <p> HOME IS FALSE </p>
         </div>    
    
        );
 }
+
 
 
   }

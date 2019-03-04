@@ -8,10 +8,24 @@ import Home from './components/Home/home.js'
 
 class App extends Component {
 
+  constructor() {
+    super()
+    this.state = {
+     home: true,
+     about: false
+    }
+
+  }
+
+  Superman() {
+    alert("SUPERMAN")
+  }
+
+
   render() {
     return (
       <div className="App">
-        <Home/>
+        <Home name={this.Superman.bind(this)}/>
         <Music />
       </div>
     );
