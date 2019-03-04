@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Nav from '../Nav/nav.js'
 import Logo from '../logo/logo.js'
 import Video_Logo from '../video_logo/video_logo.js'
+import About from '../About/about.js'
 
 class Home extends Component {
 
@@ -19,7 +20,10 @@ class Home extends Component {
   
   
 StateUpdate() {
-  this.setState({home:false})
+  this.setState({
+    home:false,
+    about: true
+  })
 }
 
   render() {
@@ -36,11 +40,13 @@ console.log("hello "+ this.props.name)
      </div>    
 
     );
-} else if (this.state.home === false ) {
+} else if (this.state.home === false & this.state.about === true) {
     return (
 
         <div> 
-          <p> HOME IS FALSE </p>
+          <Logo/>
+          <Nav test={this.props.name} test2={this.StateUpdate.bind(this)}/>
+          <About/>
         </div>    
    
        );
