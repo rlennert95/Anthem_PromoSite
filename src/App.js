@@ -17,15 +17,13 @@ class App extends Component {
 
   }
 
-  Superman() {
-    alert("SUPERMAN")
-  }
+  
 
 
   render() {
     return (
       <div className="App">
-        <Home name={this.Superman.bind(this)}/>
+        <Home/>
         <Music />
       </div>
     );

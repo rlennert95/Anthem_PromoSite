@@ -10,8 +10,9 @@ componentDidMount() {
 }
 
 playMusic() {
-  this.refs.theme.play();
+    // this.refs.theme.play();
   this.refs.theme.loop = true;
+ 
 
 }
 
