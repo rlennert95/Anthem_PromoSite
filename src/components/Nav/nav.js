@@ -42,7 +42,6 @@ class Nav extends Component {
 
 
          
-          <button >Change!</button>
         </div>
 
   

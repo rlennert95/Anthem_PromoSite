@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './characters.css'
-
+import Suit1 from "../../assets/Anthem_Colossus_Flying.png"
 
 
 class Characters extends Component {
@@ -27,7 +27,7 @@ class Characters extends Component {
             <div id="characters">
 
 <p>
-Characters CharactersCharactersCharactersCharactersCharacters
+<img id="suit1" src={Suit1} />
          </p>
         </div>
 

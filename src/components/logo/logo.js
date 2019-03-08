@@ -5,6 +5,7 @@ import './logo.css'
 function Logo() {
   return (
    <img id="main_logo" src={AnthemLogo}/>
+   
   );
 }
 
