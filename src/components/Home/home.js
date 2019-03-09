@@ -19,6 +19,15 @@ class Home extends Component {
     }
   }
 
+  HomeState() {
+    this.setState({
+      home: true,
+      about: false,
+      characters: false,
+      media: false
+    })
+  }
+
 
   AboutState() {
     this.setState({
@@ -56,7 +65,7 @@ class Home extends Component {
       return (
 
         <div>
-          <Logo />
+          <Logo HomeStateEvent={this.HomeState.bind(this)}/>
           <Nav
             AboutStateEvent={this.AboutState.bind(this)}
             CharactersStateEvent={this.CharactersState.bind(this)}
@@ -74,7 +83,7 @@ class Home extends Component {
       return (
 
         <div>
-          <Logo />
+          <Logo HomeStateEvent={this.HomeState.bind(this)}/>
           <Nav
             AboutStateEvent={this.AboutState.bind(this)}
             CharactersStateEvent={this.CharactersState.bind(this)}
@@ -90,7 +99,7 @@ class Home extends Component {
     ) {
       return (
         <div>
-          <Logo />
+          <Logo HomeStateEvent={this.HomeState.bind(this)}/>
           <Nav
             AboutStateEvent={this.AboutState.bind(this)}
             CharactersStateEvent={this.CharactersState.bind(this)}
@@ -105,7 +114,7 @@ class Home extends Component {
     ) {
       return (
       <div>
-        <Logo />
+        <Logo HomeStateEvent={this.HomeState.bind(this)}/>
         <Nav
           AboutStateEvent={this.AboutState.bind(this)}
           CharactersStateEvent={this.CharactersState.bind(this)}
