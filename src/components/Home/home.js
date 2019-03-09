@@ -65,7 +65,7 @@ class Home extends Component {
       return (
 
         <div>
-          <Logo HomeStateEvent={this.HomeState.bind(this)}/>
+          <Logo HomeStateEvent={this.HomeState.bind(this)} />
           <Nav
             AboutStateEvent={this.AboutState.bind(this)}
             CharactersStateEvent={this.CharactersState.bind(this)}
@@ -83,7 +83,7 @@ class Home extends Component {
       return (
 
         <div>
-          <Logo HomeStateEvent={this.HomeState.bind(this)}/>
+          <Logo HomeStateEvent={this.HomeState.bind(this)} />
           <Nav
             AboutStateEvent={this.AboutState.bind(this)}
             CharactersStateEvent={this.CharactersState.bind(this)}
@@ -99,7 +99,7 @@ class Home extends Component {
     ) {
       return (
         <div>
-          <Logo HomeStateEvent={this.HomeState.bind(this)}/>
+          <Logo HomeStateEvent={this.HomeState.bind(this)} />
           <Nav
             AboutStateEvent={this.AboutState.bind(this)}
             CharactersStateEvent={this.CharactersState.bind(this)}
@@ -113,15 +113,15 @@ class Home extends Component {
       & this.state.media === true
     ) {
       return (
-      <div>
-        <Logo HomeStateEvent={this.HomeState.bind(this)}/>
-        <Nav
-          AboutStateEvent={this.AboutState.bind(this)}
-          CharactersStateEvent={this.CharactersState.bind(this)}
-          MediaStateEvent={this.MediaState.bind(this)}
-        />
-        <Media />
-      </div>
+        <div>
+          <Logo HomeStateEvent={this.HomeState.bind(this)} />
+          <Nav
+            AboutStateEvent={this.AboutState.bind(this)}
+            CharactersStateEvent={this.CharactersState.bind(this)}
+            MediaStateEvent={this.MediaState.bind(this)}
+          />
+          <Media />
+        </div>
       )
     }
 
