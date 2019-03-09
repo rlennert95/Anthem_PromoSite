@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './characters.css'
 import Suit1 from "../../assets/Anthem_Colossus_Flying.png"
+import Suit2 from "../../assets/Anthem_Interceptor_Flying.png"
+import Suit3 from "../../assets/Anthem_Storm_Flying.png"
+
+
 
 
 class Characters extends Component {
@@ -26,9 +30,11 @@ class Characters extends Component {
 
             <div id="characters">
 
-<p>
-<img id="suit1" src={Suit1} />
-         </p>
+
+<img id="suit1"  className="grow" src={Suit1} />
+<img id="suit2"  className="grow" src={Suit2} />
+<img id="suit3" className="grow" src={Suit3} />
+         
         </div>
 
 
