@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Nav from '../Nav/nav.js'
+import { CSSTransition } from "react-transition-group";
 import Logo from '../logo/logo.js'
 import Video_Logo from '../video_logo/video_logo.js'
 import About from '../About/about.js'
@@ -65,14 +66,17 @@ class Home extends Component {
       return (
 
         <div>
+          
           <Logo HomeStateEvent={this.HomeState.bind(this)} />
           <Nav
             AboutStateEvent={this.AboutState.bind(this)}
             CharactersStateEvent={this.CharactersState.bind(this)}
             MediaStateEvent={this.MediaState.bind(this)}
           />
+         
           <Video_Logo />
           {/* <button onClick={this.StateUpdate.bind(this)}> test </button> */}
+          
         </div>
 
       );
@@ -83,6 +87,7 @@ class Home extends Component {
       return (
 
         <div>
+          
           <Logo HomeStateEvent={this.HomeState.bind(this)} />
           <Nav
             AboutStateEvent={this.AboutState.bind(this)}
@@ -90,6 +95,7 @@ class Home extends Component {
             MediaStateEvent={this.MediaState.bind(this)}
           />
           <About />
+        
         </div>
 
       );
@@ -99,6 +105,7 @@ class Home extends Component {
     ) {
       return (
         <div>
+          
           <Logo HomeStateEvent={this.HomeState.bind(this)} />
           <Nav
             AboutStateEvent={this.AboutState.bind(this)}
@@ -106,6 +113,7 @@ class Home extends Component {
             MediaStateEvent={this.MediaState.bind(this)}
           />
           <Characters />
+         
         </div>
       )
     } else if (
@@ -114,6 +122,7 @@ class Home extends Component {
     ) {
       return (
         <div>
+          
           <Logo HomeStateEvent={this.HomeState.bind(this)} />
           <Nav
             AboutStateEvent={this.AboutState.bind(this)}
@@ -121,6 +130,7 @@ class Home extends Component {
             MediaStateEvent={this.MediaState.bind(this)}
           />
           <Media />
+          
         </div>
       )
     }
