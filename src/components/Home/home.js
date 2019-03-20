@@ -6,6 +6,7 @@ import Video_Logo from '../video_logo/video_logo.js'
 import About from '../About/about.js'
 import Characters from '../Characters/characters.js'
 import Media from '../Media/media.js'
+import SimpleFade from "../FadeTest/fadetest.js"
 
 class Home extends Component {
 
@@ -75,6 +76,7 @@ class Home extends Component {
           />
          
           <Video_Logo />
+          <SimpleFade/>
           {/* <button onClick={this.StateUpdate.bind(this)}> test </button> */}
           
         </div>

@@ -36,15 +36,15 @@ class Characters extends Component {
     render() {
         return (
             <div id="characters">
-                <img id="suit1" className="grow" src={Suit1} />
-                <img id="suit2" className="grow" src={Suit2} />
-                <img id="suit3" className="grow" src={Suit3} />
+                <img id="suit1" className="grow" src={Suit1} onClick={this.handleShow}/>
+                <img id="suit2" className="grow" src={Suit2} onClick={this.handleShow}/>
+                <img id="suit3" className="grow" src={Suit3} onClick={this.handleShow}/>
 
-          <Button variant="primary" onClick={this.handleShow}>
+          {/* <Button variant="primary" onClick={this.handleShow}>
           Launch demo modal
-        </Button>
+        </Button> */}
 
-        <Modal show={this.state.show} onHide={this.handleClose}>
+        <Modal show={this.state.show} onHide={this.handleClose} id="modal1">
           <Modal.Header closeButton>
             <Modal.Title>Modal heading</Modal.Title>
           </Modal.Header>
