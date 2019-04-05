@@ -55,11 +55,29 @@ class Characters extends Component {
         return (
           
             <div id="characters">
-           <ImageFadeIn loadAsBackgroundImage={false} opacityTransition={3}id="suit1" className="grow" src={Suit1} onClick={this.handleShowSuit1} />
-                
+           <ImageFadeIn 
+           loadAsBackgroundImage={false} 
+           opacityTransition={3}
+           id="suit1" 
+           className="grow" 
+           src={Suit1} 
+           onClick={this.handleShowSuit1}/>
+             <ImageFadeIn 
+           loadAsBackgroundImage={false} 
+           opacityTransition={5}
+           id="suit2" 
+           className="grow" 
+           src={Suit2} 
+           onClick={this.handleShow}/>
+              <ImageFadeIn 
+           loadAsBackgroundImage={false} 
+           opacityTransition={7}
+           id="suit3" 
+           className="grow" 
+           src={Suit3} 
+           onClick={this.handleShow}/>  
            
-                <img id="suit2" className="grow" src={Suit2} onClick={this.handleShow}/>
-                <img id="suit3" className="grow" src={Suit3} onClick={this.handleShow}/>
+              
 
           {/* <Button variant="primary" onClick={this.handleShow}>
           Launch demo modal
