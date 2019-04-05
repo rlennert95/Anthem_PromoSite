@@ -60,3 +60,4 @@ SimpleFade.propTypes = {
 };
 
 export default withStyles(styles)(SimpleFade);
+

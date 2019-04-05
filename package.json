@@ -7,6 +7,9 @@
     "react": "^16.8.1",
     "react-bootstrap": "^1.0.0-beta.5",
     "react-dom": "^16.8.1",
+    "react-fade-opacity": "^2.0.0",
+    "react-image-fade-in": "^1.0.2",
+    "react-native": "^0.59.3",
     "react-scripts": "2.1.5",
     "react-transition-group": "^2.6.0"
   },

@@ -76,7 +76,7 @@ class Home extends Component {
           />
          
           <Video_Logo />
-          <SimpleFade/>
+          {/* <SimpleFade/> */}
           {/* <button onClick={this.StateUpdate.bind(this)}> test </button> */}
           
         </div>
