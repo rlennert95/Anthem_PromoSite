@@ -13,9 +13,10 @@ class Characters extends Component {
         super()
 
         this.handleShow = this.handleShow.bind(this);
+        this.handleShow2 = this.handleShow2.bind(this);
+        this.handleShow3 = this.handleShow3.bind(this);
         this.handleClose = this.handleClose.bind(this);
-        this.handleShowSuit1 = this.handleShowSuit1.bind(this);
-        this.handleCloseSuit1 = this.handleCloseSuit1.bind(this);
+      
 
         this.state = {
             home: false,
@@ -34,21 +35,33 @@ class Characters extends Component {
     //   delay: 6000
     // }
 
-    handleClose() {
-        this.setState({ show: false });
+      handleClose() {
+        this.setState({ show: false,
+                        ShowSuit1: false,
+                        ShowSuit2: false
+                      });
       }
     
       handleShow() {
-        this.setState({ show: true });
+        this.setState({ show: false,
+                        ShowSuit1: true
+                       });
       }
 
-      handleShowSuit1() {
-        this.setState({ ShowSuit1: true });
+      handleShow2() {
+        this.setState({ show: true,
+                        ShowSuit1: false
+                       });
       }
 
-      handleCloseSuit1 ()  {
-        this.setState({ ShowSuit1: false });
+      handleShow3() {
+        this.setState({ show: false,
+                        ShowSuit1: false,
+                        ShowSuit2: true
+                       });
       }
+
+
 
 
     render() {
@@ -57,25 +70,29 @@ class Characters extends Component {
             <div id="characters">
            <ImageFadeIn 
            loadAsBackgroundImage={false} 
-           opacityTransition={3}
+           opacityTransition={2}
            id="suit1" 
            className="grow" 
            src={Suit1} 
-           onClick={this.handleShowSuit1}/>
+           onClick={this.handleShow}/>
+
+           
              <ImageFadeIn 
            loadAsBackgroundImage={false} 
-           opacityTransition={5}
+           opacityTransition={4}
            id="suit2" 
            className="grow" 
            src={Suit2} 
-           onClick={this.handleShow}/>
+           onClick={this.handleShow2}/>
+
+
               <ImageFadeIn 
            loadAsBackgroundImage={false} 
-           opacityTransition={7}
+           opacityTransition={6}
            id="suit3" 
            className="grow" 
            src={Suit3} 
-           onClick={this.handleShow}/>  
+           onClick={this.handleShow3}/>  
            
               
 
@@ -98,16 +115,31 @@ class Characters extends Component {
           </Modal.Footer>
         </Modal>
 
-   <Modal ShowSuit1={this.state.ShowSuit1} onHide={this.handleCloseSuit1} id="modal2">
+    <Modal show={this.state.ShowSuit1} onHide={this.handleClose} id="modal1">
           <Modal.Header closeButton>
-            <Modal.Title>SUIT 1</Modal.Title>
+            <Modal.Title>test</Modal.Title>
           </Modal.Header>
-          <Modal.Body>This is suit 1</Modal.Body>
+          <Modal.Body>test</Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={this.handleCloseSuit1}>
+            <Button variant="secondary" onClick={this.handleClose}>
               Close
             </Button>
-            <Button variant="primary" onClick={this.handleCloseSuit1}>
+            <Button variant="primary" onClick={this.handleClose}>
+              Save Changes
+            </Button>
+          </Modal.Footer>
+        </Modal>
+
+    <Modal show={this.state.ShowSuit2} onHide={this.handleClose} id="modal1">
+          <Modal.Header closeButton>
+            <Modal.Title>suit 2</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>suit 2</Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={this.handleClose}>
+              Close
+            </Button>
+            <Button variant="primary" onClick={this.handleClose}>
               Save Changes
             </Button>
           </Modal.Footer>
