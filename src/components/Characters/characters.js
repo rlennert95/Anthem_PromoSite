@@ -100,7 +100,7 @@ class Characters extends Component {
           Launch demo modal
         </Button> */}
 
-        <Modal show={this.state.show} onHide={this.handleClose} id="modal1">
+        <Modal show={this.state.show} onHide={this.handleClose} id="modal1" >
           <Modal.Header closeButton>
             <Modal.Title>Placeholder</Modal.Title>
           </Modal.Header>
@@ -115,7 +115,7 @@ class Characters extends Component {
           </Modal.Footer>
         </Modal>
 
-    <Modal show={this.state.ShowSuit1} onHide={this.handleClose} id="modal1">
+    <Modal show={this.state.ShowSuit1} onHide={this.handleClose} id="modal1" >
           <Modal.Header closeButton>
             <Modal.Title>test</Modal.Title>
           </Modal.Header>
@@ -130,7 +130,7 @@ class Characters extends Component {
           </Modal.Footer>
         </Modal>
 
-    <Modal show={this.state.ShowSuit2} onHide={this.handleClose} id="modal1">
+    <Modal show={this.state.ShowSuit2} onHide={this.handleClose} id="modal1" >
           <Modal.Header closeButton>
             <Modal.Title>suit 2</Modal.Title>
           </Modal.Header>

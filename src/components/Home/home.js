@@ -7,6 +7,7 @@ import About from '../About/about.js'
 import Characters from '../Characters/characters.js'
 import Media from '../Media/media.js'
 import SimpleFade from "../FadeTest/fadetest.js"
+import FooterPage from '../footer/footer.js'
 
 class Home extends Component {
 
@@ -76,9 +77,7 @@ class Home extends Component {
           />
          
           <Video_Logo />
-          {/* <SimpleFade/> */}
-          {/* <button onClick={this.StateUpdate.bind(this)}> test </button> */}
-          
+          <FooterPage/>
         </div>
 
       );
@@ -97,7 +96,7 @@ class Home extends Component {
             MediaStateEvent={this.MediaState.bind(this)}
           />
           <About />
-        
+          <FooterPage/>
         </div>
 
       );
@@ -115,7 +114,7 @@ class Home extends Component {
             MediaStateEvent={this.MediaState.bind(this)}
           />
           <Characters />
-         
+          <FooterPage/>
         </div>
       )
     } else if (
@@ -132,7 +131,7 @@ class Home extends Component {
             MediaStateEvent={this.MediaState.bind(this)}
           />
           <Media />
-          
+          <FooterPage/>
         </div>
       )
     }
