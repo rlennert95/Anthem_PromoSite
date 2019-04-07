@@ -28,17 +28,16 @@ class Nav extends Component {
 
        
 
-          <p id="about_nav" onClick={this.props.AboutStateEvent} > About </p>
+          <span id="about_nav" onClick={this.props.AboutStateEvent} > About </span>
+          <span> / </span>
+          <span id="characters_nav" onClick={this.props.CharactersStateEvent}> Characters </span>
+          <span> / </span>
+          <span id="media_nav" onClick={this.props.MediaStateEvent}> Media </span>
 
-          <p id="characters_nav" onClick={this.props.CharactersStateEvent}> Characters </p>
-
-          <p id="media_nav" onClick={this.props.MediaStateEvent}> Media </p>
-
-          <p>  </p>
+          
 
 
 
-          <p id="purchase"> Purchase </p>
 
 
          

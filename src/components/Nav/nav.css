@@ -9,6 +9,8 @@
     text-shadow: 1px 1px grey;
     width: 10%;
     padding-left: 2%;
+    display: inline;
+    margin: 5%;
 
     
   }

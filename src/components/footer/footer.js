@@ -6,7 +6,7 @@ const FooterPage = () => {
   return (
     <Card.Footer className="footer">
     <div>
-      Someone famous in <cite title="Source Title">Source Title</cite>
+       <cite title="Source Title">© 2019 Electronic Arts Inc.</cite>
     </div>
   </Card.Footer>
   );
