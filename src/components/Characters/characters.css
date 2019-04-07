@@ -29,11 +29,11 @@
 
 #characters {
     text-align: center;
-    margin-top: -10%;
+    margin-top: 2%;
 }
 
-
-
-#modal1 {
-    width: 1000px;
+.modal-lg {
+    max-width: 80% !important;
+    height: 80% !important;
 }
+

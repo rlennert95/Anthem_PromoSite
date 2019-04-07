@@ -4,8 +4,8 @@ import Suit1 from "../../assets/Anthem_Interceptor_FullBody.png"
 import Suit2 from "../../assets/Anthem_Ranger_FullBody.png"
 import Suit3 from "../../assets/Anthem_Colossus_FullBody.png"
 import { Modal, Button } from 'react-bootstrap'
-import {Fade} from 'react-fade-opacity'
 import ImageFadeIn from 'react-image-fade-in'
+import Img2 from "../../assets/EAP18_Screenshots_sc01_sh005_FINAL.png"
 
 
 class Characters extends Component {
@@ -28,12 +28,6 @@ class Characters extends Component {
         }
     }
 
-   
-    // static defaultProps = {
-    //   in: false,
-    //   interval: 50,
-    //   delay: 6000
-    // }
 
       handleClose() {
         this.setState({ show: false,
@@ -61,9 +55,6 @@ class Characters extends Component {
                        });
       }
 
-
-
-
     render() {
         return (
           
@@ -76,7 +67,6 @@ class Characters extends Component {
            src={Suit1} 
            onClick={this.handleShow}/>
 
-           
              <ImageFadeIn 
            loadAsBackgroundImage={false} 
            opacityTransition={4}
@@ -84,7 +74,6 @@ class Characters extends Component {
            className="grow" 
            src={Suit2} 
            onClick={this.handleShow2}/>
-
 
               <ImageFadeIn 
            loadAsBackgroundImage={false} 
@@ -94,28 +83,20 @@ class Characters extends Component {
            src={Suit3} 
            onClick={this.handleShow3}/>  
            
-              
-
-          {/* <Button variant="primary" onClick={this.handleShow}>
-          Launch demo modal
-        </Button> */}
-
-        <Modal show={this.state.show} onHide={this.handleClose} id="modal1" >
+        <Modal show={this.state.show} onHide={this.handleClose} id="modal1">
+        
           <Modal.Header closeButton>
             <Modal.Title>Placeholder</Modal.Title>
           </Modal.Header>
-          <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+          <Modal.Body>
+          <img class="d-block w-100" src={Img2} alt="Second slide" />
+          </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={this.handleClose}>
-              Close
-            </Button>
-            <Button variant="primary" onClick={this.handleClose}>
-              Save Changes
-            </Button>
+           
           </Modal.Footer>
         </Modal>
 
-    <Modal show={this.state.ShowSuit1} onHide={this.handleClose} id="modal1" >
+    <Modal show={this.state.ShowSuit1} onHide={this.handleClose} id="modal2" >
           <Modal.Header closeButton>
             <Modal.Title>test</Modal.Title>
           </Modal.Header>
@@ -130,7 +111,7 @@ class Characters extends Component {
           </Modal.Footer>
         </Modal>
 
-    <Modal show={this.state.ShowSuit2} onHide={this.handleClose} id="modal1" >
+    <Modal show={this.state.ShowSuit2} onHide={this.handleClose} id="modal3" >
           <Modal.Header closeButton>
             <Modal.Title>suit 2</Modal.Title>
           </Modal.Header>
@@ -145,29 +126,18 @@ class Characters extends Component {
           </Modal.Footer>
         </Modal>
 
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+ <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
 
-<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      ...
-    </div>
-  </div>
+ <div class="modal fade bd-example-modal-lg"  tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-lg">
+     <div class="modal-content">
+     hey
+     </div>
+</div>
 </div>
 
             </div>
 
-
-
-
-        
-
-
-
-        
-            
-           
-            
         )
     }
 }
