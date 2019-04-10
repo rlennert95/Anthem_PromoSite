@@ -77,7 +77,7 @@ class Home extends Component {
           />
          
           <Video_Logo />
-          <ModalExample/>
+        
           <FooterPage/>
         </div>
 

@@ -3,7 +3,7 @@ import './characters.css'
 import Suit1 from "../../assets/Anthem_Interceptor_FullBody.png"
 import Suit2 from "../../assets/Anthem_Ranger_FullBody.png"
 import Suit3 from "../../assets/Anthem_Colossus_FullBody.png"
-import { Modal, Button } from 'react-bootstrap'
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import ImageFadeIn from 'react-image-fade-in'
 import Img2 from "../../assets/EAP18_Screenshots_sc01_sh005_FINAL.png"
 
@@ -12,11 +12,7 @@ class Characters extends Component {
     constructor() {
         super()
 
-        this.handleShow = this.handleShow.bind(this);
-        this.handleShow2 = this.handleShow2.bind(this);
-        this.handleShow3 = this.handleShow3.bind(this);
-        this.handleClose = this.handleClose.bind(this);
-      
+
 
         this.state = {
             home: false,
@@ -29,31 +25,7 @@ class Characters extends Component {
     }
 
 
-      handleClose() {
-        this.setState({ show: false,
-                        ShowSuit1: false,
-                        ShowSuit2: false
-                      });
-      }
     
-      handleShow() {
-        this.setState({ show: false,
-                        ShowSuit1: true
-                       });
-      }
-
-      handleShow2() {
-        this.setState({ show: true,
-                        ShowSuit1: false
-                       });
-      }
-
-      handleShow3() {
-        this.setState({ show: false,
-                        ShowSuit1: false,
-                        ShowSuit2: true
-                       });
-      }
 
     render() {
         return (
@@ -65,7 +37,7 @@ class Characters extends Component {
            id="suit1" 
            className="grow" 
            src={Suit1} 
-           onClick={this.handleShow}/>
+           />
 
              <ImageFadeIn 
            loadAsBackgroundImage={false} 
@@ -73,7 +45,7 @@ class Characters extends Component {
            id="suit2" 
            className="grow" 
            src={Suit2} 
-           onClick={this.handleShow2}/>
+           />
 
               <ImageFadeIn 
            loadAsBackgroundImage={false} 
@@ -81,60 +53,9 @@ class Characters extends Component {
            id="suit3" 
            className="grow" 
            src={Suit3} 
-           onClick={this.handleShow3}/>  
+           />  
            
-        <Modal show={this.state.show} onHide={this.handleClose} id="modal1">
-        
-          <Modal.Header closeButton>
-            <Modal.Title>Placeholder</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-          <img class="d-block w-100" src={Img2} alt="Second slide" />
-          </Modal.Body>
-          <Modal.Footer>
-           
-          </Modal.Footer>
-        </Modal>
-
-    <Modal show={this.state.ShowSuit1} onHide={this.handleClose} id="modal2" >
-          <Modal.Header closeButton>
-            <Modal.Title>test</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>test</Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={this.handleClose}>
-              Close
-            </Button>
-            <Button variant="primary" onClick={this.handleClose}>
-              Save Changes
-            </Button>
-          </Modal.Footer>
-        </Modal>
-
-    <Modal show={this.state.ShowSuit2} onHide={this.handleClose} id="modal3" >
-          <Modal.Header closeButton>
-            <Modal.Title>suit 2</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>suit 2</Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={this.handleClose}>
-              Close
-            </Button>
-            <Button variant="primary" onClick={this.handleClose}>
-              Save Changes
-            </Button>
-          </Modal.Footer>
-        </Modal>
-
- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
-
- <div class="modal fade bd-example-modal-lg"  tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-   <div class="modal-dialog modal-lg">
-     <div class="modal-content">
-     hey
-     </div>
-</div>
-</div>
+       
 
             </div>
 
